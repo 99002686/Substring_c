@@ -1,21 +1,24 @@
-SOURCE = unity/unity.c \
-src/memory_allocation.c \
-src/substring.c \
-test/test_substring.c \
-main.c 
+SOURCE = source/main.c \
+source/insurance.c \
+source/alcohol.c \
+source/diet.c \
+source/exercise.c \
+source/smoke.c \
+source/accident.c \
+source/drugs.c \
+source/healthIssues.c \
+source/insomniac.c \
+source/monthPayment.c \
+source/policy.c \
+source/stress.c
 
-INCLUDE = -Iunity \
--Iinclude \
--Itest
+INCLUDE = -Iinclude \
 
-PROJECT_NAME = SUBSTRING.out
+PROJECT_NAME = INSURANCE.out
 
-$(PROJECT_NAME): $(SRC)
+$(PROJECT_NAME): $(SOURCE)
 	gcc $(SOURCE) $(INCLUDE) -o $(PROJECT_NAME)
 
 run:$(PROJECT_NAME)
 	./$(PROJECT_NAME)
-
-doc: 
-	make -C documentation
 
