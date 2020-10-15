@@ -18,4 +18,6 @@ run:$(PROJECT_NAME)
 
 doc: 
 	make -C documentation
+clean:
+	rm -rf *.o *.out
 
