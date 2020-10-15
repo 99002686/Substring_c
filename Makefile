@@ -14,7 +14,7 @@ $(PROJECT_NAME): $(SRC)
 	gcc $(SOURCE) $(INCLUDE) -o $(PROJECT_NAME)
 
 run:$(PROJECT_NAME)
-	./$(PROJECT_NAME)
+	./TEST_$(PROJECT_NAME)
 
 doc: 
 	make -C documentation
